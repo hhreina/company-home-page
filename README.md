@@ -1,2 +1,2 @@
-# company-home-page
-a project for Codecademy full-stack engineer
+# Company Home Page
+a project using flexbox for Codecademy full-stack engineer
