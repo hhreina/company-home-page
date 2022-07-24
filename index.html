@@ -4,52 +4,64 @@
   <head>
     <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Company Home Page</title>
-        <meta name="description" content="">
+        <title>YumSea app for seafood recipes with an Asian flare</title>
+        <meta name="description" content="Chef-tested seafood recipes app">
         <script src="https://kit.fontawesome.com/45516e7a5f.js" crossorigin="anonymous"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
     <header>
-      <div class="logo">
-
+      <div id="logo">
+        <img src="./media/images/logo-fish.svg" alt="YumSea logo of knife and fish">
+        <span class="orange">Yum</span><span class="green">Sea</span>
       </div>
-      <nav role="navigation">
-        <div id="desktop-menu">
-          <ul>
-            <li><a href="#">What We Do</a></li>
-            <li><a href="#">Our Products</a></li>
-            <li><a href="#">Our Staff</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
-        <div id="menuToggle">
-          <input type="checkbox" />
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul id="mobile-menu">
-              <li><a href="#">What We Do</a></li>
-              <li><a href="#">Our Products</a></li>
-              <li><a href="#">Our Staff</a></li>
-              <li><a href="#">Contact Us</a></li>
-            </ul>
-       </div>
-      </nav>
-
+      <div id="desktop-nav">          
+        <nav>
+            <a href="#">Recipes</a>
+            <a href="#">Our Chefs</a>
+            <a href="#">Get the app</a>
+        </nav>
+      </div>
+      <div id="mobile-nav">
+        <nav>
+            <a href="#">
+                <img src="./media/images/recipe-icon.svg" alt="Recipes">
+            </a>
+            <a href="#">
+                <img src="./media/images/chefs-hat.svg" alt="Our chefs">
+            </a>
+            <a href="#">
+              <i class="fa-solid fa-mobile-screen-button fa-sm"></i>
+            </a>              
+        </nav>
+      </div>
     </header>
     <main>
-      <banner>
-
-      </banner>
-      <section class="products">
+      <div class="banner">
+        <h1>Chef-tested seafood recipes with an Asian flare</h1>
+      </div class="banner">
+      <section class="recipes">
 
       </section>
-      <section class="staff">
-
+      <section class="chefs">
+        <h2>Our Seafood Experts</h2>
+        <div class="chef-pics">
+          <figure>
+            <img src="./media//images/chef-febrian-zakaran.jpg">
+            <figcaption>Chef Febrian Zakaran</figcaption>
+          </figure>
+          <figure>
+            <img src="./media//images/chef-derrick-pare.jpg">
+            <figcaption>Chef Derrick Pare</figcaption>
+          </figure>
+          <figure>
+            <img src="./media//images/chef-yilmaz-akin.jpg">
+            <figcaption>Chef Yilmaz Akin</figcaption>
+          </figure>
+        </div>
       </section>
 
     </main>
