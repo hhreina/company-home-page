@@ -45,6 +45,16 @@ header {
   z-index: 10;
 }
 
+/** Adjust anchor links for header height **/
+a[name]::before,
+h2 [id]::before {
+    content: '';
+    display: block;
+    visibility: hidden;
+    height: 64px;      /* this is the height of your header */
+    margin-top: -64px; /* this is the height of your header, negated */
+}
+
 main {
   display: block;
   margin: 0 auto;
@@ -66,7 +76,7 @@ cursor: pointer;
 }
 
 h1 {
-  font-family: 'Merienda One', Roboto, sans-serif;
+  font-family: Poppins, Roboto, sans-serif;
   font-weight: 600;
 }
 
@@ -190,42 +200,27 @@ header .logo img {
 
 /** Style banner **/
 .banner {
-  position: relative;
   display: flex;
   flex-direction: row;
   width: 100%;
   margin: 0 auto;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 20%;
+  padding-right: 20%;
   justify-content: space-evenly;
-  background-color: #FEF9F9;
+  background-color: #e4440042;
   padding-top: 130px;
   padding-bottom: 130px;
   
 }
 
-.banner::before {
-  content: "";
-  background-image: url("./media/images/wave-background.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.03;
-}
 .banner h1 {
-  position: relative;
-  width: 400px;
+  width: 30%;
   font-size: 3.5rem;
 }
 
 .featured img {
-  position: relative;
-  width: 400px;
-  border-radius: 15%;
+  width: 30%;
+  border-radius: 10%;
 }
 
 /** Style chefs section **/
@@ -239,7 +234,7 @@ header .logo img {
 
   }
 
-  section.chefs::before {
+  #chefs::before {
     content: "";
     background-image: url("./media/images/wave-background.jpg");
     background-repeat: no-repeat;
@@ -252,14 +247,23 @@ header .logo img {
     opacity: 0.05;
   }
 
-  .chefs h2 {
+  #chefs h2 {
     position: relative;
     display: block;
     width: 100%;
     text-align: center;
   }
 
-  .chef-pics {
+  #chefs p {
+    text-align: center;
+    font-size: 1.3em;
+    width: 600px;
+    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  #chef-pics {
     position: relative;
     display: inline-flex;
     max-width: 80%;
