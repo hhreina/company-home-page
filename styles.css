@@ -80,8 +80,9 @@ font-weight: 600;
 }
 
 /** Style logo **/
-header #logo {
+header .logo {
   display: inline-flex;
+  position: sticky;
   padding-left: 48px;
   font-family: 'Merienda One', cursive;
   font-size: 2.5rem;
@@ -91,7 +92,7 @@ header #logo {
   z-index: 11;
 }
 
-header #logo img {
+header .logo img {
   display: inline-flex;
   height: 64px;
   width: auto;
@@ -155,7 +156,7 @@ header #logo img {
       border-bottom: 1px solid lightgray;
   }
 
-  #logo img {
+  .logo img {
     height: 24px;
   }
 
@@ -189,11 +190,42 @@ header #logo img {
 
 /** Style banner **/
 .banner {
+  position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 10%;
+  padding-right: 10%;
+  justify-content: space-evenly;
   background-color: #FEF9F9;
   padding-top: 130px;
+  padding-bottom: 130px;
+  
+}
+
+.banner::before {
+  content: "";
+  background-image: url("./media/images/wave-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.03;
+}
+.banner h1 {
+  position: relative;
+  width: 400px;
+  font-size: 3.5rem;
+}
+
+.featured img {
+  position: relative;
+  width: 400px;
+  border-radius: 15%;
 }
 
 /** Style chefs section **/
@@ -203,6 +235,7 @@ header #logo img {
     flex-direction: column;
     
     padding-top: 130px;
+    padding-bottom: 130px;
 
   }
 
